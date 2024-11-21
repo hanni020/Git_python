@@ -6,7 +6,7 @@ root = ET.Element('root')  # Root-Element der XML-Datei
 
 # Öffne die CSV-Datei und lese die Inhalte
 with open('Vokabel.csv', 'r', encoding='utf-8') as csvfile:
-    csvreader = csv.reader(csvfile, delimiter=',')
+    csvreader = csv.reader(csvfile, delimiter=';')
 
     # Gehe durch jede Zeile der CSV-Datei
     for row in csvreader:
